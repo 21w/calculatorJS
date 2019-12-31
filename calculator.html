@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>計算機</title>
+    <link rel="stylesheet" type="text/css" href="calculator_CSS.css" />
+    <script type="text/javascript" src="calculator_JS.js"></script>
+  </head>
+  <body>
+    <div class="calculatorDiv">
+      <div class="resultDisplay">
+        <input type="number" id="result" readonly="readonly" />
+      </div>
+      <div class="buttonDisplay">
+        <button type="submit" onclick="createNum(7)">7</button>
+        <button type="submit" onclick="createNum(8)">8</button>
+        <button type="submit" onclick="createNum(9)">9</button>
+        <button type="submit" onclick="deleteNum()" id="DelButton">DEL</button>
+        <button type="submit" onclick="createNum(4)">4</button>
+        <button type="submit" onclick="createNum(5)">5</button>
+        <button type="submit" onclick="createNum(6)">6</button>
+        <button type="submit" onclick="select(0)">+</button>
+        <button type="submit" onclick="createNum(1)">1</button>
+        <button type="submit" onclick="createNum(2)">2</button>
+        <button type="submit" onclick="createNum(3)">3</button>
+        <button type="submit" onclick="select(1)">-</button>
+        <button type="submit" onclick="inversion()">±</button>
+        <button type="submit" onclick="createNum(0)">0</button>
+        <button type="submit" id="noneButton"></button>
+        <button type="submit" onclick="select(2)">×</button>
+        <button type="submit" onclick="calculation()" id="resultButton">
+          =
+        </button>
+        <button type="submit" onclick="select(3)">÷</button>
+      </div>
+    </div>
+    <div class="calculatorLogDiv">
+      <h3>計算ログ</h3>
+      <textarea id="calculatorLog" readonly></textarea>
+    </div>
+  </body>
+</html>
